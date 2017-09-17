@@ -1,0 +1,36 @@
+{
+  "name": "stackify",
+  "version": "1.0.0",
+  "description": "Create your stack project",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run build && jest --verbose",
+    "build": "babel ./src -d dist",
+    "start": "npm run build && node dist/server.js"
+  },
+  "keywords": [
+    "koajs",
+    "api",
+    "rest",
+    "jest",
+    "babel"
+  ],
+  "author": "lucasfontesgaspareto <lucasfontesgaspareto@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "kcors": "^2.2.1",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.1",
+    "koa-router": "^7.2.1",
+    "mongoose": "^4.11.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2017": "^6.24.1",
+    "jest": "^21.1.0",
+    "superagent": "^3.6.0",
+    "supertest": "^3.0.0"
+  }
+}
