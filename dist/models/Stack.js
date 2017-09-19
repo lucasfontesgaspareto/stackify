@@ -19,7 +19,8 @@ var StackSchema = _mongoose2.default.Schema({
   },
   languages: [String],
   framworks: [String],
-  test: [String]
+  test: [String],
+  vote: Number
 });
 
 exports.default = _mongoose2.default.model('Stack', StackSchema);

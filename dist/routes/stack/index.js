@@ -142,8 +142,9 @@ exports.default = {
             case 10:
 
               ctx.status = 204;
+              ctx.body = stack;
 
-            case 11:
+            case 12:
             case 'end':
               return _context3.stop();
           }
@@ -182,8 +183,9 @@ exports.default = {
             case 10:
 
               ctx.status = 204;
+              ctx.body = stack;
 
-            case 11:
+            case 12:
             case 'end':
               return _context4.stop();
           }

@@ -45,6 +45,7 @@ export default {
     }
 
     ctx.status = 204
+    ctx.body = stack
   },
 
   delete: async (ctx) => {
@@ -57,5 +58,6 @@ export default {
     }
 
     ctx.status = 204
+    ctx.body = stack
   }
 }

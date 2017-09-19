@@ -8,7 +8,8 @@ const StackSchema = mongoose.Schema({
   },
   languages: [String],
   framworks: [String],
-  test: [String]
+  test: [String],
+  rank: Number
 })
 
 export default mongoose.model('Stack', StackSchema)

@@ -12,7 +12,7 @@ describe('Stack endpoints test', () => {
   test('Initialize database', async () => {
     response = await db()
     expect(response._readyState).toBe(1)
-  })
+  }, 10000)
   test('POST /stack', async () => {
     response = await server.post('/stack').send({
       type: 'backend',
@@ -36,7 +36,8 @@ describe('Stack endpoints test', () => {
       type: 'backend',
       languages: ['javascript'],
       framworks: ['koajs'],
-      tests: ['jest']
+      tests: ['jest'],
+      rank: 2
     })
     expect(response.statusCode).toBe(204)
   })

@@ -1,5 +1,7 @@
 # Stackify
 
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+
 ##### Version v1.0.0
 API for stackify, a project with the intuit to group most used stacks for development
 

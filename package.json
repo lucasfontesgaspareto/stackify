@@ -4,7 +4,7 @@
   "description": "Create your stack project",
   "main": "server.js",
   "scripts": {
-    "test": "npm run build && jest --verbose",
+    "test": "standard src/** && npm run build && jest --verbose",
     "build": "babel ./src -d dist",
     "start": "npm run build && node dist/server.js"
   },
@@ -29,7 +29,13 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2017": "^6.24.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "jest": "^21.1.0",
+    "standard": "^10.0.3",
     "superagent": "^3.6.0",
     "supertest": "^3.0.0"
   }
